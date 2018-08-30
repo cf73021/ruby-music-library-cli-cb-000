@@ -23,6 +23,6 @@ class MusicLibraryController
   end
 
   def list_songs
-    list= *(1..$1); puts list * %Q{. \n} + 'songs '
+    list= *(1..$1); puts list * %Q{songs \n} + 'songs '
   end
 end
