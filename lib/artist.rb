@@ -1,5 +1,5 @@
 require 'pry'
-extends Concerns::Findable
+extend concerns::findable
 
 class Artist
   attr_accessor :name
