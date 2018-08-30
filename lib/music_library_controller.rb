@@ -6,5 +6,7 @@ class MusicLibraryController
     new_music.import
   end
 
-
+  def call
+    puts "Welcome"
+  end
 end
