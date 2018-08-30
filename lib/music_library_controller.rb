@@ -28,4 +28,11 @@ class MusicLibraryController
       puts "#{i+1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
   end
+
+  def list_artists
+   sorted_artists = Artist.all.map {|artist| artist.name}.uniq.sort
+   sorted_artists.each_with_index do |artist, i|
+     puts "#{i+1}. #{artist}"
+   end
+ end
 end
