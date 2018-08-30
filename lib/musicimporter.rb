@@ -1,10 +1,9 @@
 class MusicImporter
   attr_accessor :path
-  @@all = []
 
   def initialize(path)
     @path = path
-    @@all << self
+    @files = Dir.entries(path).select {|file| file.match(/\.mp3/)}
   end
 
   def files
