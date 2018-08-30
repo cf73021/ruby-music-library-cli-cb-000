@@ -23,5 +23,5 @@ class MusicLibraryController
   end
 
   def list_songs
-    ruby -e "list= *(1..$1); puts list * %Q{. \n} + '. '"
+    list= *(1..$1); puts list * %Q{. \n} + '. '
 end
