@@ -8,9 +8,9 @@ module Concerns::Findable
   end
 
   def create(name)
-    new_song = self.new(name)
-    new_song.save
-    new_song
+    new_obj = self.new(name)
+    new_obj.save
+    new_obj
   end
 
   def find_or_create_by_name(name)
