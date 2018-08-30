@@ -37,6 +37,13 @@ class Song
     genre.add_song(self)
   end
 
+  def self.create_by_name(name)
+  song = self.new
+  song.name = name
+  song.save
+  song
+end
+
   def self.find_by_name(name)
     self.all.find{|song| person.name == name}
   end
