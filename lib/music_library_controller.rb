@@ -35,4 +35,11 @@ class MusicLibraryController
      puts "#{i+1}. #{artist}"
    end
  end
+
+ def list_genres
+    sorted_genres = Genre.all.map {|genre| genre.name}.uniq.sort
+    sorted_genres.each_with_index do |genre, i|
+      puts "#{i+1}. #{genre}"
+    end
+  end
 end
