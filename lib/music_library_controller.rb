@@ -24,4 +24,5 @@ class MusicLibraryController
 
   def list_songs
     list= *(1..$1); puts list * %Q{. \n} + '. '
+  end
 end
