@@ -7,7 +7,7 @@ module Concerns::Findable
     create(name)
   end
 
-  def self.create(name)
+  def create(name)
     new_song = Song.new(name)
     new_song.save
     new_song
