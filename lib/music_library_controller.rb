@@ -23,6 +23,6 @@ class MusicLibraryController
   end
 
   def list_songs
-    list= *(1..$1); puts list * %Q{songs \n} + 'songs '
+    sorted_songs = Song.all.sort {|song_a,song_b| song_a.name <=> song_b.name }
   end
 end
