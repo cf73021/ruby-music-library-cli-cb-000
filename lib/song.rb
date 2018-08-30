@@ -49,7 +49,7 @@ class Song
     then
       create_by_name(name)
     else
-      find_by_name(name)
+      self.find_by_name(name)
     end
 
   end
